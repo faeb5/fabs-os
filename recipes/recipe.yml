@@ -23,11 +23,8 @@ modules:
         - atim/starship
     install:
       packages:
-        - gnome-shell-extension-appindicator
-        - gnome-shell-extension-auto-move-windows
         - micro
         - starship
-        - virt-manager
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -41,14 +38,8 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - com.synology.SynologyDrive
-          - com.yubico.yubioath
-          - io.github.ungoogled_software.ungoogled_chromium
-          - io.gitlab.librewolf-community
-          - org.gnome.Extensions
+          - org.mozilla.firefox
           - org.gnome.Loupe
-          - org.keepassxc.KeePassXC
-          - org.signal.Signal
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
