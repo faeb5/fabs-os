@@ -21,10 +21,17 @@ modules:
     repos:
       copr:
         - atim/starship
+      files:
+        - https://rpm.tuxedocomputers.com/fedora/tuxedo.repo
+      keys:
+        - https://rpm.tuxedocomputers.com/fedora/45/0x54840598.pub.asc
+
     install:
       packages:
+        - gnome-shell-extension-auto-move-windows
         - micro
         - starship
+        - tuxedo-control-center
         - virt-manager
     remove:
       packages:
@@ -48,5 +55,5 @@ modules:
           - org.keepassxc.KeePassXC
           - org.signal.Signal
       - scope: user # Also add Flathub user repo, but no user packages
-
+      
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
