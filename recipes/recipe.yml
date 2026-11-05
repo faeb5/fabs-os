@@ -28,6 +28,7 @@ modules:
 
     install:
       packages:
+        - gnome-shell-extension-appindicator
         - gnome-shell-extension-auto-move-windows
         - micro
         - starship
